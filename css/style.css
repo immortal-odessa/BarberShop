@@ -1,17 +1,48 @@
-span {
-  color: red;
+/* VARIABLES - Переменная */
+:root {
+  --pretty-color: #ff6c00;
+  --while-color: #ffffff;
 }
 
-sup {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  /* Убрали маркеры у списка */
+  list-style: none;
+}
+
+a {
+  /* Наследуй цвет шрифта от родителя */
+  color: inherit;
+  /* Убрали нижнее подчеркивание */
+  text-decoration: none;
 }
 
 .container {
-  background: green;
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
-section {
-  background: hotpink;
+/* HEADER STYLES */
+.header {
+  background: black;
+  color: var(--while-color);
 }
+/* Эффект наведения мыши */
+/* .navList a:hover {
+  color: var(--pretty-color);
+} */
+
+/* Эффект фокусировки */
+/* .navList a:focus {
+  color: chartreuse;
+} */
+.navList a:hover,
+.navList a:focus {
+  color: var(--pretty-color);
+}
+/* HEADER STYLES */

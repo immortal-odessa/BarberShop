@@ -1,0 +1,35 @@
+/* Селектор идентификатора */
+
+/* #about {
+  background: purple;
+} */
+
+/* .about {
+  background: pink;
+} */
+
+/* .navList {
+  background: powderblue;
+} */
+
+/* Селектор наследника */
+/* .navList li {
+  border: 3px solid blue;
+} */
+
+/* Селектор ребенка */
+/* .navList > li {
+  border: 2px solid black;
+} */
+
+#body {
+  background-color: yellow;
+}
+
+.body {
+  background-color: green;
+}
+
+body {
+  background-color: blue;
+}

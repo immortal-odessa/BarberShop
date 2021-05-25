@@ -10,8 +10,9 @@
     rel="stylesheet"/>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
+<!-- <body class="body" id="body" style="background-color: red;"> -->
 <body>
-    <header>
+    <header class="header">
 
         <div class="container">
             <!-- My comments -->
@@ -19,20 +20,27 @@
                 <img src="./images/Logo.svg" alt="logo">
             </a>
             <nav>
-                <ul>
+                <ul class="navList">
                     <li>
-                        <a href="#">О нас</a>
+                        <a href="#about">О нас</a>
                     </li>
                     <li>
-                        <a href="#">Услуги и 
+                        <a href="#price">Услуги и 
                             <span>цены</span>
                         </a>
                     </li>
+                    <!-- <li>
+                        <ul>
+                            <li>Вложенный текст</li>
+                            <li>Вложенный текст</li>
+                            <li>Вложенный текст</li>
+                        </ul>
+                    </li> -->
                     <li>
-                        <a href="#">Мастера</a>
+                        <a href="#masters">Мастера</a>
                     </li>
                     <li>
-                        <a href="#">Контакты</a>
+                        <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
                 <ul>
@@ -49,7 +57,7 @@
             <div class="container">
                 <ul>
                     <li>
-                        <a href="">Instagrem</a>
+                        <a href="">Instagram</a>
                     </li>
                     <li>
                         <a href="">Youtube</a>
@@ -74,7 +82,7 @@
                 </ul>
             </div>
         </section>
-        <section>
+        <section id="about" class="about">
             <div class="container">
                 <ul>
                     <li>
@@ -101,7 +109,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="price">
             <div class="container">
                 <p>
                     Проведи время в компании лучших мастеров
@@ -195,7 +203,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="masters">
             <div class="container">
                 <p>для настоящих ценителей атмосферы</p>
                 <h2>Наши мастера</h2>
@@ -293,7 +301,7 @@
             </div>
         </section>
         <section>
-                <div>
+                <div class="container">
                     <h2>Онлайн запись</h2>
                     <form>
                         <input type="text">
@@ -303,7 +311,7 @@
                     </form>
                 </div>
 
-                <div>
+                <div id="contacts">
                     <h2>Контакты</h2>
                     <address>
                         <ul>
