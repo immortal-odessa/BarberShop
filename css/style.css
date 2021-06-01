@@ -47,6 +47,14 @@ a {
 .sign-link:hover {
   background-color: var(--pretty-color);
 }
+
+.title {
+  font-family: var(--accent-font);
+  font-size: 42px;
+  line-height: 1.167;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
 /* HEADER STYLES */
 .header {
   background: black;
@@ -73,3 +81,24 @@ a {
   font-size: 28px;
 } */
 /* HEADER STYLES */
+
+/* HERO section */
+.hero .title {
+  font-size: 72px;
+  line-height: 1.181;
+}
+/* HERO section */
+
+/* PRICE section */
+.price-section {
+  background-color: black;
+  color: var(--while-color);
+}
+/* PRICE section */
+
+/* CONTACTS section */
+.contacts-section {
+  background-color: black;
+  color: var(--while-color);
+}
+/* CONTACTS section */
