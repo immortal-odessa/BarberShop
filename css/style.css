@@ -2,6 +2,10 @@
 :root {
   --pretty-color: #ff6c00;
   --while-color: #ffffff;
+  --black-color: #303030;
+  --grey-op: rgba(157, 164, 189, 0.6);
+  --grey: rgba(157, 164, 189, 1);
+  --dark-grey: #555555;
   --main-font: 'Open Sans', sans-serif;
   --accent-font: 'Raleway', sans-serif;
 }
@@ -13,6 +17,10 @@
 }
 body {
   font-family: var(--main-font);
+  font-style: normal;
+  color: var(--black-color);
+}
+address {
   font-style: normal;
 }
 
@@ -46,6 +54,15 @@ a {
 
 .sign-link:hover {
   background-color: var(--pretty-color);
+  color: var(--while-color);
+}
+
+.preTitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.364;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .title {
@@ -55,11 +72,21 @@ a {
   font-weight: bold;
   letter-spacing: 0.05em;
 }
+.text {
+  font-size: 18px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+}
+.mediaList .li:hover,
+.mediaList .li:focus {
+  color: var(--pretty-color);
+}
 /* HEADER STYLES */
 .header {
-  background: black;
+  background: var(--black-color);
   color: var(--while-color);
 }
+
 /* Эффект наведения мыши */
 /* .navList a:hover {
   color: var(--pretty-color);
@@ -71,6 +98,8 @@ a {
 } */
 .navList a:hover,
 .navList a:focus,
+.phone-link:hover,
+.phone-link:focus,
 .mediaList a:hover,
 .mediaList a:focus {
   color: var(--pretty-color);
@@ -80,25 +109,78 @@ a {
   color: aqua;
   font-size: 28px;
 } */
+
 /* HEADER STYLES */
 
 /* HERO section */
+.hero {
+  background-color: var(--black-color);
+  color: var(--while-color);
+}
+
+.hero .preTitle {
+  color: var(--grey-op);
+}
 .hero .title {
   font-size: 72px;
   line-height: 1.181;
 }
-/* HERO section */
+
+.hero .text {
+  color: var(--dark-grey);
+}
+
+.sliderButtons button {
+  color: var(--grey-op);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--grey-op);
+  width: 60px;
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.sliderButtons button:last-child {
+  text-align: right;
+}
+
+.sliderButtons button:hover,
+.sliderButtons button:focus {
+  cursor: pointer;
+  color: var(--while-color);
+  border-bottom: 1px solid var(--while-color);
+}
+
+/* ABOUT section */
+
+.about .deskription {
+  font-size: 14px;
+  line-height: 1.857;
+  letter-spacing: 0.02em;
+  color: var(--dark-grey);
+}
 
 /* PRICE section */
 .price-section {
-  background-color: black;
+  background-color: var(--black-color);
   color: var(--while-color);
 }
 /* PRICE section */
 
 /* CONTACTS section */
 .contacts-section {
-  background-color: black;
+  background-color: var(--black-color);
   color: var(--while-color);
+}
+
+.contacts-section .sign-link {
+  padding: 12px 38px;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.contacts-section .sign-link:hover,
+.contacts-section .sign-link:focus {
+  background-color: var(--pretty-color);
 }
 /* CONTACTS section */

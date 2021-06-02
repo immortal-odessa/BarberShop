@@ -14,7 +14,6 @@
 <!-- <body class="body" id="body" style="background-color: red;"> -->
 <body>
     <header class="header">
-
         <div class="container">
             <!-- My comments -->
             <a>
@@ -23,7 +22,7 @@
             <nav>
                 <ul class="navList">
                     <li class="item">
-                        <a href="#about">О нас</a>
+                        <a href="#about" class="active">О нас</a>
                     </li>
                     <li>
                         <a href="#price">Услуги и цены</a>
@@ -35,9 +34,9 @@
                         <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
-                <ul class="mediaList">
+                <ul class="contactsList">
                     <li class="item">
-                        <a href="tel:+380441111111">+380 44 111 111 11</a>
+                        <a href="tel:+380441111111" class="phone-link">+380 44 111 111 11</a>
                     </li>
                     <li class="item">
                         <a href="#" class="sign-link">онлайн-запись</a>
@@ -51,24 +50,21 @@
         <!-- Main content -->
         <section class="hero">
             <div class="container">
-                <ul>
-                    <li>
-                        <a href="">Instagram</a>
+                <ul class="mediaList">
+                    <li class="item">
+                        <a href="" class="link">Instagram</a>
                     </li>
                     <li>
                         <a href="">Youtube</a>
                     </li>
                 </ul>
-
                 <div>
-                    <p>A hair salon for man in Kyiv</p>
+                    <p class="preTitle">A hair salon for man in Kyiv</p>
                     <h1 class="title">BarberShop</h1>
-                    <p>Мы эксперты в <em>модных мужских стрижках</em>.
-                        Работаем быстро, осторожно и со вкусом.
+                    <p class="text">Мы эксперты в модных мужских стрижках.<br>Работаем быстро, осторожно и со вкусом.
                     </p>
                 </div>   
-
-                <ul>
+                <ul class="sliderButtons">
                     <li>
                         <button type="button">Назат</button>
                     </li>
@@ -89,13 +85,13 @@
                     </li>
                 </ul>
                 <div>
-                    <p>О нас</p>
+                    <p class="preTitle">О нас</p>
                     <h2 class="title">Лучший Барбершоп
                     твоего города</h2>
-                    <h3>Если ты хочешь добавить в свой образ больше уверенности – 
+                    <h3 class="text">Если ты хочешь добавить в свой образ больше уверенности – 
                         тебе точно к нам.
                     </h3>
-                    <p>
+                    <p class="deskription">
                         Мы команда, которая никогда не останавливается на достигнутом
                         и жаждет перемен. И когда ты попадешь в руки нашего мастера,
                         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
@@ -107,11 +103,11 @@
         </section>
         <section id="price" class="price-section">
             <div class="container">
-                <p>
+                <p class="preTitle">
                     Проведи время в компании лучших мастеров
                 </p>
                 <h2 class="title">Услуги и цены</h2>
-                <table>
+                <table class="text">
                     <thead>
                         <tr>
                             <td>Услуга</td>
@@ -189,9 +185,9 @@
                     </li>
                 </ul>
                 <div>
-                    <p>Старая традиционная школа</p>
+                    <p class="preTitle">Старая традиционная школа</p>
                     <h2 class="title">Почему приходят именно к нам?</h2>
-                    <p>О нас говорят только хорошее. Но лучше 1 раз увидеть 
+                    <p class="text">О нас говорят только хорошее. Но лучше 1 раз увидеть 
                         и прочувствовать, чем 10 раз прочитать.
                     </p>
                 </div>
@@ -199,7 +195,7 @@
         </section>
         <section id="masters">
             <div class="container">
-                <p>для настоящих ценителей атмосферы</p>
+                <p class="preTitle">для настоящих ценителей атмосферы</p>
                 <h2 class="title">Наши мастера</h2>
                 <ul>
                     <li>
@@ -277,7 +273,7 @@
         <section>
             <div class="container">
                 <!--  <h2></h2>  -->
-                <p>На латинском языке “барба” означает “борода”</p>
+                <p class="preTitle">На латинском языке “барба” означает “борода”</p>
                 <ul>
                     <li>
                         <img src="./images/job1.jpg" alt="job1" width="270">
@@ -302,14 +298,14 @@
                             <input type="text">
                             <input type="tel">
                             <textarea></textarea>
-                            <button type="submit">отправить</button>
+                            <button type="submit" class="sign-link">отправить</button>
                         </form>
                     </div>
                 </div>
 
                 <div id="contacts">
                     <h2 class="title">Контакты</h2>
-                    <address>
+                    <address class="text">
                         <ul >
                             <li>
                                 <p>ул. Васильковая, 7А Киев, 08132</p>
@@ -322,9 +318,9 @@
                             </li>
                         </ul>
                     </address>
-                    <div>
+                    <div >
                         <h3>время работы</h3>
-                        <p>Ежедневно с 9:00 до 22:00</p>
+                        <p class="text">Ежедневно с 9:00 до 22:00</p>
                     </div>
                 </div>
             </address>
@@ -334,7 +330,7 @@
     <footer>
         <!-- copyright, etc-->
         <p>&copy; Copyright 2020</p>
-        <ul>
+        <ul class="mediaList">
             <li>
                 <a href="">Instagrem</a>
             </li>
